@@ -3,7 +3,7 @@ language: java
 install:
  - mvn install
  - mvn sonar:sonar \
-  -Dsonar.projectKey=Lucablain_epsi-jee-eboutique \
-  -Dsonar.organization=lucablain-github \
-  -Dsonar.host.url=https://sonarcloud.io \
-  -Dsonar.login=7a40c7fab45f4d2cc159775a83189f5909876510
+  -Dsonar.projectKey=$SONAR_PROJECT_KEY \
+  -Dsonar.organization=$SONAR_ORGANIZATION \
+  -Dsonar.host.url=$SONAR_HOST \
+  -Dsonar.login=$SONAR_LOGIN
